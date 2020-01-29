@@ -1,5 +1,5 @@
 ﻿import React from 'react'
-import Player from './features/player/'
+import Player from './features/player'
 
 class App extends React.Component {
     render() {
