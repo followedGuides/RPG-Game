@@ -1,12 +1,27 @@
 ﻿import React from 'react'
-
-
+import walkSprite from './characters.png'
+import { connect } from 'react-redux'
 function Player(props) {
     return (
-        <div> Player </div>
+        <div
+            style={{
+                position: 'absolute',
+                top: props.position[1],
+                left: props.position[0],
+                backgroundImage: `url('${walkSprite}')`, 
+                backgroundPosition: '0 0',
+                width: '30px',
+                height: '33px',
+            }}
+        />
         
         )
 }
 
+function mapStateToProps(state) {
+    return {
+        ...state.player,
+    }
+}
 
-export default Player
+export default connect(mapStateToProps)(Player)
