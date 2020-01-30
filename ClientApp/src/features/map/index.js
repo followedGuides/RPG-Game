@@ -8,8 +8,9 @@ function Map(props) {
                 width: '800px',
                 heigth: '400px',
                 backgroundColor: 'black',
-                border: '4px solid white',
-                margin: '10px auto'
+                border: '0px solid white',
+                margin: '400px',
+
             }}
 
 
