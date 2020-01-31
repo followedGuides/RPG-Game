@@ -18,8 +18,8 @@ export default function handleMovement(player) {
     }
 
     function observeBoundaries(oldPos, newPos) {
-        return  (newPos[0]  >= 0 && newPos[0] <= MAP_WIDTH) &&
-                (newPos[1]   >= 0 && newPos[1] <= MAP_HEIGT)
+        return  (newPos[0]  >= 0 && newPos[0] <= MAP_WIDTH -35) &&
+                (newPos[1]   >= 0 && newPos[1] <= MAP_HEIGT -35)
                 ?   newPos    :   oldPos
         }
         
