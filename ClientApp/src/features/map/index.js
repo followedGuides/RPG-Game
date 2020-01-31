@@ -5,11 +5,11 @@ function Map(props) {
     return (
         <div
             style={{
-                width: '800px',
-                heigth: '400px',
+                width: '700px',
+                heigth: '350px',
                 backgroundColor: 'black',
                 border: '0px solid white',
-                margin: '400px',
+                margin: '350px',
 
             }}
 
